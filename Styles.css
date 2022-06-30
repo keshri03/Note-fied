@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+   
+}
+/*for header body*/
+.header{
+ background-image: linear-gradient(to right, rgb(0, 139, 109), rgba(186, 186, 186, 0.497));
+ text-align: center;
+ width: 100%;
+ height: 130px;
+ padding-left: 20px;
+ font-family: 'RocknRoll One', sans-serif;
+ color: white;
+ font-weight: bold;
+}
+.header h2{
+    padding-top: 10px;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*for centre body*/
+.centre{
+    background-color: darkslategrey;
+    width: 101.5%;
+    min-height: 500px;
+}
+/*for box body*/
+.mainbox{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    position: absolute;
+    margin-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    animation-name: mainboxanimation;
+    animation-duration: 2s;
+}
+@keyframes mainboxanimation
+{
+    0%{left: 0%};
+    100%{left: 50%};
+}
+.box{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background:white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    transition-duration: 1s;
+}
+.box h2, .sup h2{
+    font-family: 'RocknRoll One', sans-serif;
+}
+/*for box form*/
+.box  input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 70%;
+    outline: none;
+    transition: 0.5s;
+
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus
+{
+    width: 85%;
+    border-radius: 20px;
+    border: 1px solid rgb(108, 181, 250);
+}
+.logbtn1, .signbtn, .backbtn
+{
+    border: 0;
+    background-image:  linear-gradient(to right, rgba(41, 203, 111, 0.743), rgba(248, 248, 248, 0.633));
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 85%;
+    outline: none;
+    transition: 0.5s;
+    color:black;
+}
+
+.signbtn{
+    background-image: linear-gradient(to right, rgba(41, 203, 111, 0.743), rgba(248, 248, 248, 0.633));
+}
+.logbtn1:hover, .signbtn:hover, .backbtn:hover
+{
+    width: 70%;
+    background: cyan;
+    color:black;
+    cursor: pointer;
+}
+.signbtn:hover{
+    background: mediumspringgreen;
+    
+}
+/*------------------------------------------------*/
+/*for box form signup*/
+.box2{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 300%;
+    background:white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    transition-duration: 1s;
+}
+.box2 h2, .sup h2{
+    font-family: 'RocknRoll One', sans-serif;
+}
+.box2  input[type="text"], .box2 input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 70%;
+    outline: none;
+    transition: 0.5s;
+
+}
+.box2 input[type="text"]:focus, .box2 input[type="password"]:focus
+{
+    width: 85%;
+    border: 2px, solid, blueviolet;
+    border-radius: 20px;
+    border: 1px solid rgb(108, 181, 250);
+}
+.box3{
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    background:white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    transition-duration: 1s;
+}
+.box3 h4{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.box3 p {
+    padding: 40px 10px;
+
+}
+/*for info button "What is WebNote"*/
+.info{
+    width: 200px;
+    padding: 8px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    position: absolute;
+    font-weight: bold;
+    top: 170px;
+    left: 50%;
+    outline: none;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 25px;
+    background-image: linear-gradient(to left, rgba(50, 176, 124, 0.861), rgba(203, 203, 203, 0.778));
+    
+    transition: 0.5s;
+    /* font-style: 20px; */
+
+}
+.info:hover{
+    width: 250px ;
+    background :cyan;
+    cursor: pointer;
+}
+
+/*Info inside box visible on clicking "What is WebNote"*/
+.About{
+    width: 300px;
+    height: 230px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background:white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+    display:none;/*Not displayed initially */
+    
+}
+.About_btn{
+    border: 0;
+    background-image:  linear-gradient(to right, darkcyan, cyan);
+    display: block;
+    margin: 30px auto;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    outline: none;
+    transition: 0.5s;
+    color: rgb(250, 250, 250);
+}
+.About_btn:hover{
+    width: 250px;
+    /*background-image: linear-gradient(to right, cyan, darkcyan)*/
+    background: cyan;
+    color: rgb(26, 22, 22);
+    cursor: pointer;
+}
+/*for footer*/
+.footer{
+    position: relative;
+    width: 101.5%;
+    height: 150px;
+    bottom: 0%;
+    text-align: center;
+    padding-top: 5px;
+    background-image: linear-gradient(to left, rgba(50, 176, 124, 0.861), rgba(203, 203, 203, 0.778));
+   
+}
+.footer p{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*for overlapping logo*/
+.logodiv{
+    background-color: darkslategray;
+    height: 110px;
+    width: 101.5%;
+    border: none;
+    margin:0px;
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    transition-duration: 0.5s;
+}
+.logo:hover{
+    
+    box-shadow:2px 2px 7px rgba(0, 0, 0, 0.5), -2px -2px 7px rgba(0, 0, 0, 0.5);
+    
+}
+.fa{
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    bottom: 5px;
+    transition: 0.5s;
+}
+.fa-instagram{
+    
+    box-sizing: border-box;
+    background-image:  linear-gradient(to right, rgb(217, 13, 166), rgba(33, 201, 234, 0.399));
+}
+.fa-github{
+    background-color: black;
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}

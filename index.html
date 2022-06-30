@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-fied Login</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Stick&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h2>Note-fied</h2>
+        <br>
+        <h3>Login page</h3>
+    </div>
+    <div class="centre">
+        <button onclick="showdetails()" class="info">About Note-fied</button>
+        <div class="mainbox" id="mainbox">
+            <form class="box" id="form1" action="index2.html">
+                <h2>LOGIN</h2>
+                <input type="text" id="loginid" placeholder="E mail ID" required>
+                <input type="password" id="loginpassword" placeholder="Password" required>
+                <button class="logbtn1" id="loginbtn1" type="button" onclick="login()">Login</button>
+                <hr>
+                <button class="signbtn" id="signupbtn1" onclick="showsignup()" type="button">Signup</button>
+            </form>
+
+            <form class="box2" id="form2">
+                <h2>SIGNUP</h2>
+                <input type="text" id="signupemailid" placeholder="E mail ID" required>
+                <input type="password" id="signuppassword" placeholder="Password" required>
+                <button class="signbtn" id="signupbtn2" type="submit">Signup</button>
+                <hr>
+                <button class="logbtn1" type="button" id="loginbtn2" onclick="loginshow()">Login</button>
+            </form>
+
+            <div class="box3" id="details">
+                <h4>What is Note-fied</h4>
+                <hr>
+                <p>It is a simple and effective notes making app. With an attractive layout you can add, edit and delete text notes . Signup(if you are new) or login and you are ready to go.</p>
+                <button class="backbtn" type="button" id="backbtn" onclick="back()">Back</button>
+            </div>
+
+        </div>
+        
+    </div >
+    <div class="logodiv">
+        <img src="Logo.png" alt="Note-fied logo" class="logo" id="logo"></div>
+    <div class="footer">
+        <P>Contact Developer</p>
+            <span><a href="https://github.com/keshri03" class="fa fa-github" target="_blank"></a></span>
+            <span><a href="https://instagram.com/raja.keshri_?igshid=YmMyMTA2M2Y=" class="fa fa-instagram" target="_blank"></a></span>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB-Dltg61KW_Cp3-RO4usEul9HR3BlXSMc",
+            authDomain: "webnote-19e78.firebaseapp.com",
+            projectId: "webnote-19e78",
+            storageBucket: "webnote-19e78.appspot.com",
+            messagingSenderId: "710721063012",
+            appId: "1:710721063012:web:91f9277865e96c36c3b771",
+            measurementId: "G-WD9L6SH83T"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="Main.js"></script>
+</body>
+
+</html>
